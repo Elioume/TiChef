@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,13 @@
 </head>
 
 <body>
-    
+
     <!-- HEADER -->
     <header class="p-16">
 
         <!-- A Gauche -->
-        <nav  class="flex justify-between mlr-64">
-            <a href="" class="orange bold">Ti Chef <span class="noir">.com</span></a>
+        <nav class="flex justify-between mlr-64">
+            <a href="" class="orange bold">Ti Chef <span class="noir bold">.com</span></a>
 
             <!-- A Droite -->
             <ul class="flex justify-between NoPuce">
@@ -28,73 +29,76 @@
     </header>
 
     <!-- MAIN -->
-    <main  class="container-1000">
+    <main class="container-1000">
 
         <!-- H1 -->
-        <h1>Toutes vos recettes en un clic</h1>
+        <h1 class="textCenter orange ptb-32">Toutes vos recettes en un clic !</h1>
 
         <!-- Section Fiche recette n°1 -->
-        <section>
-            
+        <section class="borderBox">
+
             <!-- Div Titre recette -->
-            <div>
-                <h2>Poulet au curry</h2>
-                <a href=""><img src="assets/like.png" alt=""></a>    
-                <a href=""><img src="assets/share.png" alt=""></a>
+            <div class="flex align-center">
+                <h2 class="pr-16">Poulet au curry</h2>
+                <a href="" class="pr-16"><img src="assets/like.png" alt=""></a>
+                <a href="" class="pr-16"><img src="assets/share.png" alt=""></a>
             </div>
 
             <!-- Grande Div -->
-            <div>
+            <div class="flex justify-between gap">
 
                 <!-- Div Image | Gauche -->
-                <div>
-                    
-                    <!-- Div Image/P | Haut -->
-                    <div>
+                <div class="large-3">
+                    <div class="flex gap-16">
 
-                        <img src="assets/big-img.png" alt="">
+                        <!-- Div Image/P | Haut -->
+                        <div class="large-12">
 
-                        <!-- Div Paragraphe -->
-                        <div>
-                            <p>Poulet au curry</p>
+                            <img src="assets/big-img.png" alt="" class="large-12">
+
+                            <!-- Div Paragraphe -->
+                            <div class="bgOrange ptb-16 pl-10 borderRadiusb8">
+                                <p class="blanc">Poulet au curry</p>
+                            </div>
+
                         </div>
 
+                        <!-- Images | Bas -->
+                        <img src="assets/small-image1.png" alt="" class="large-4 borderRadius5">
+                        <img src="assets/small-image2.png" alt="" class="large-4 borderRadius5">
+                        <img src="assets/small-image3.png" alt="" class="large-4 borderRadius5">
                     </div>
 
-                    <!-- Images | Bas -->
-                    <img src="assets/small-image1.png" alt="">
-                    <img src="assets/small-image2.png" alt="">
-                    <img src="assets/small-image3.png" alt="">
 
                 </div>
 
                 <!-- Div Tags/Details/Ingredients | Milieu -->
-                <div>
+                <div class="large-3">
 
                     <!-- Div Tags -->
-                    <div>
+                    <div class="flex justify-between">
 
                         <!-- Tag n°1 | Nombre Personne-->
-                        <div>
+                        <div class="flex justify-between">
 
-                            <img src="assets/nombre-icone.png" alt="">
-                            <p>30 min</p>
+                            <img src="assets/nombre-icone.png" alt="" class="imgTags">
+                            <p class="orange ml-5 mr-5">30 min</p>
 
                         </div>
 
                         <!-- Tag n°2 | Durée cuisson-->
-                        <div>
+                        <div class="flex justify-between">
 
-                            <img src="assets/cuisson-icone.png" alt="">
-                            <p>30 min</p>
+                            <img src="assets/cuisson-icone.png" alt="" class="imgTags">
+                            <p class="orange ml-5 mr-5">30 min</p>
 
                         </div>
 
                         <!-- Tag n°3 | Durée temps prep-->
-                        <div>
+                        <div class="flex justify-between">
 
-                            <img src="assets/duree-icone.png" alt="">
-                            <p>30 min</p>
+                            <img src="assets/duree-icone.png" alt="" class="imgTags">
+                            <p class="orange ml-5 mr-5  ">30 min</p>
 
                         </div>
 
@@ -103,28 +107,30 @@
                     <!-- Div Details | Milieu -->
                     <div>
 
-                        <h3>Details</h3>
+                        <h3 class="orange mt-16">Details</h3>
 
-                        <p>Cette recette peut être adaptée en fonction de vos préférences en matière d'épices. N'hésitez pas à ajouter plus de légumes ou à ajuster le niveau de piquant en ajoutant des flocons de piment ou des piments frais.</p>
+                        <p>Cette recette peut être adaptée en fonction de vos préférences en matière d'épices. N'hésitez
+                            pas à ajouter plus de légumes ou à ajuster le niveau de piquant en ajoutant des flocons de
+                            piment ou des piments frais.</p>
 
                     </div>
 
                     <!-- Div Ingredients | Bas-->
                     <div>
 
-                        <h3>Ingredients</h3>
+                        <h3 class="orange mt-16">Ingredients</h3>
 
                         <ul>
-                            <li>450 g de blancs ou de cuisses de poulet désossés et sans peau</li>
-                            <li>1 oignon</li>
-                            <li>2 gousses d’ail</li>
-                            <li>1 cuillère à soupe de gingembre râpé ou haché</li>
-                            <li>2 cuillères à soupe de poudre de curry (à ajuster selon le goût)</li>
-                            <li>1 boîte de tomates en dés</li>
-                            <li>1 boîte de lait de coco</li>
-                            <li>Sel et poivre, selon le goût</li>
-                            <li>Feuilles de coriandre fraîche, hachées</li>
-                            <li>Riz cuit ou pain naan, pour accompagner</li>
+                            <li class="mt-5">450 g de blancs ou de cuisses de poulet désossés et sans peau</li>
+                            <li class="mt-5">1 oignon</li>
+                            <li class="mt-5">2 gousses d’ail</li>
+                            <li class="mt-5">1 cuillère à soupe de gingembre râpé ou haché</li>
+                            <li class="mt-5">2 cuillères à soupe de poudre de curry (à ajuster selon le goût)</li>
+                            <li class="mt-5">1 boîte de tomates en dés</li>
+                            <li class="mt-5">1 boîte de lait de coco</li>
+                            <li class="mt-5">Sel et poivre, selon le goût</li>
+                            <li class="mt-5">Feuilles de coriandre fraîche, hachées</li>
+                            <li class="mt-5">Riz cuit ou pain naan, pour accompagner</li>
                         </ul>
 
                     </div>
@@ -132,18 +138,26 @@
                 </div>
 
                 <!-- Etapes | Droite -->
-                <div>
+                <div class="large-6">
 
-                    <h3>Étapes</h3>
+                    <h3 class="orange">Étapes</h3>
 
                     <ul>
-                        <li>Émincez l'oignon, hachez l’ail, râpez ou hachez le gingembre, et découpez le poulet en morceaux de taille égale.</li>
-                        <li>Dans une grande poêle ou une cocotte, faites chauffer un peu d’huile. Ajoutez l’oignon et faites-le revenir jusqu’à ce qu’il soit translucide. Ajoutez ensuite l’ail et le gingembre, puis faites revenir 1 à 2 minutes de plus.</li>
-                        <li>Ajoutez les morceaux de poulet dans la poêle et faites-les dorer de tous les côtés.</li>
-                        <li>Saupoudrez le curry en poudre sur le poulet et mélangez bien pour enrober tous les ingrédients. Laissez cuire 1 à 2 minutes pour faire ressortir les arômes.</li>
-                        <li>Ajoutez les tomates en dés (avec leur jus) et le lait de coco. Mélangez bien. Portez à ébullition, puis réduisez le feu et laissez mijoter à couvert pendant environ 20 minutes, ou jusqu’à ce que le poulet soit bien cuit et la sauce légèrement épaissie.</li>
-                        <li>Salez et poivrez selon votre goût. Si vous aimez les plats plus épicés, vous pouvez ajouter des flocons de piment ou du piment frais à ce stade.</li>
-                        <li>Parsemez de coriandre fraîche hachée et servez chaud avec du riz basmati ou du pain naan.</li>
+                        <li class="mt-5">Émincez l'oignon, hachez l’ail, râpez ou hachez le gingembre, et découpez le poulet en
+                            morceaux de taille égale.</li>
+                        <li class="mt-5">Dans une grande poêle ou une cocotte, faites chauffer un peu d’huile. Ajoutez l’oignon et
+                            faites-le revenir jusqu’à ce qu’il soit translucide. Ajoutez ensuite l’ail et le gingembre,
+                            puis faites revenir 1 à 2 minutes de plus.</li>
+                        <li class="mt-5">Ajoutez les morceaux de poulet dans la poêle et faites-les dorer de tous les côtés.</li>
+                        <li class="mt-5">Saupoudrez le curry en poudre sur le poulet et mélangez bien pour enrober tous les
+                            ingrédients. Laissez cuire 1 à 2 minutes pour faire ressortir les arômes.</li>
+                        <li class="mt-5">Ajoutez les tomates en dés (avec leur jus) et le lait de coco. Mélangez bien. Portez à
+                            ébullition, puis réduisez le feu et laissez mijoter à couvert pendant environ 20 minutes, ou
+                            jusqu’à ce que le poulet soit bien cuit et la sauce légèrement épaissie.</li>
+                        <li class="mt-5">Salez et poivrez selon votre goût. Si vous aimez les plats plus épicés, vous pouvez ajouter
+                            des flocons de piment ou du piment frais à ce stade.</li>
+                        <li class="mt-5">Parsemez de coriandre fraîche hachée et servez chaud avec du riz basmati ou du pain naan.
+                        </li>
                     </ul>
 
                 </div>
@@ -155,27 +169,28 @@
     </main>
 
     <!-- FOOTER -->
-    <footer  class="container-1000">
+    <footer class="flex justify-between bgOrange ptb-32 mt-100">
 
         <!-- Partie Gauche -->
-        <div>
-            <a href="">Ti Chef <span>.com</span></a>
+        <div class="large-6">
+            <a href="" class="blanc bold">Ti Chef <span class="bold">.com</span></a>
 
-            <p>Le site de toutes vos meilleurs recettes !</p>
+            <p class="blanc">Le site de toutes vos meilleurs recettes !</p>
         </div>
 
         <!-- Partie Droite -->
-         <div>
-            <p>À propos</p>
+        <div class="large-6">
+            <p class="blanc">À propos</p>
 
-            <ul>
-                <li><a href="">Partenariat</a></li>
-                <li><a href="">Politique de confidentialité</a></li>
-                <li><a href="">Conditions d’utilisations</a></li>
+            <ul class="NoPuce">
+                <li><a href="" class="blanc">Partenariat</a></li>
+                <li><a href="" class="blanc">Politique de confidentialité</a></li>
+                <li><a href="" class="blanc">Conditions d’utilisations</a></li>
             </ul>
-         </div>
+        </div>
 
     </footer>
 
 </body>
+
 </html>

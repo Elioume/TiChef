@@ -40,6 +40,19 @@ Variables
     align-items: center;
 }
 
+.textCenter {
+    text-align: center;
+}
+
+.gap{
+    gap: var(--gap);
+}
+
+.gap-16{
+    --gap: 16px;
+    gap: var(--gap);
+}
+
 /*--------------------------------------------------
 Largeurs et colonnes
 ---------------------------------------------------*/
@@ -252,28 +265,58 @@ a{
 /*--------------------------------------------------
 Margins and paddings ... don't abuse ! 
 ---------------------------------------------------*/
+.mt-5 {
+    margin-top: 5px;
+}
 
-.mt-64{
-    margin-top: 64px;
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .mt-32{
     margin-top: 32px;
 }
 
-.mlr-64 {
-    margin: 0px 64px;
+.mt-64 {
+    margin-top: 64px;
 }
 
 .mt-100{
     margin-top: 100px;
 }
 
+.mlr-64 {
+    margin: 0px 64px;
+}
+
 .p-16{
     padding: 16px;
 }
 
+.ptb-16 {
+    padding: 16px 0px;
+}
 
+.ptb-32 {
+    padding: 32px 0px;
+}
+
+.pr-16{
+    padding-right: 16px;
+}
+
+.pl-10{
+    padding-left: 10px;
+}
 
 /* Header */
 .NoPuce {
@@ -291,4 +334,34 @@ header {
 .btnHeader {
     border: 1.5px solid #FD8D5D;
     border-radius: 20px;
+}
+
+/* Section 1 */
+/* Partie Gauche */
+
+.bgOrange {
+    background-color: #FD8D5D;
+}
+
+.borderRadiusb8 {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.borderRadius5 {
+    border-radius: 5px;
+}
+
+.imgTags {
+    width: 15px;
+    height: 15px;
+}
+
+.borderBox {
+    box-shadow: 1px 1px 5px 1px lightgray;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+img {
+    display: block;
 }
