@@ -302,6 +302,10 @@ Margins and paddings ... don't abuse !
     margin-top: 100px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .mlr-64 {
     margin: 0px 64px;
 }
@@ -386,4 +390,12 @@ img {
 
 .imgT {
     width: 16px;
+}
+
+.btn{
+    background-color: #FD8D5D;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    margin-top: 20px;
 }

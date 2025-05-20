@@ -8,17 +8,17 @@ fetch(`data.json`)
 })
 
 function afficherRecette(recette){
-let tabIgredients = recette.ingredients
-let liIngredients =""
-tabIgredients.forEach(i=>{
-    liIngredients +=`<li class="mt-5">${i.quantite} ${i.unite} ${i.aliment}</li>`
-})
+    let tabIgredients = recette.ingredients
+    let liIngredients =""
+    tabIgredients.forEach(i=>{
+        liIngredients +=`<li class="mt-5">${i.quantite} ${i.unite} ${i.aliment}</li>`
+    })
 
-let tabEtapes = recette.etapes 
-let liEtapes =""
-tabEtapes.forEach(e=>{
-    liEtapes +=`<li class="mt-5">${e.descEtape}</li>`
-})
+    let tabEtapes = recette.etapes
+    let liEtapes =""
+    tabEtapes.forEach(e=>{
+        liEtapes +=`<li class="mt-5">${e.descEtape}</li>`
+    })
 
     document.getElementById(`fiches-recette`).innerHTML += `
         <!-- Template Fiche recette n°1 -->
@@ -124,4 +124,36 @@ tabEtapes.forEach(e=>{
                     </div>
                 </div>
             </div>`
+}
+
+fetch(`articles-data.json`)
+.then(rep=>rep.json())
+.then(data=>{
+    console.log(data)
+    data.forEach(p=>{
+        afficherAritcle(p)
+    })
+})
+
+function afficherAritcle(article){
+    document.getElementById(`fiches-article`).innerHTML += `
+     <!-- Template Article de cuisine -->
+            <div class="borderBox flex justify-between">
+                <!-- PARTIE GAUCHE -->
+                <div class="large-6">
+                    <img src="${article.img}" alt=""  class="responsive">
+                </div>
+
+                <!-- PARTIE DROITE -->
+                <div class="large-6">
+                    <h2 class="orange">${article.titre}</h2>
+                    <div class="flex justify-between">
+                        <p class="orange">${article.auteur}</p>
+                        <p class="orange">${article.date}</p>
+                    </div>
+                    <p class="mt-5 mb-20">${article.resume}</p>
+                    <a href="" class="btn orange">Lire l'article</a>
+                </div>
+            </div>`
+
 }
